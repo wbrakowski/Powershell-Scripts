@@ -7,8 +7,8 @@ $licenseFile = "<license path>
 
 #Fill array with container names
 Write-Host("Filling arrays with container names...")
-$inactiveContainerNames = docker ps --filter "status=exited" --format "{{.Names}}"
-$containerNames = docker ps -a --format "{{.Names}}"
+$inactiveContainerNames = ps --filter "status=exited" --filter "label=nav" --format "{{.Names}}"
+$containerNames = Get-BcContainers
 
 #Start inactive containers
 Write-Host("Starting inactive containers...")
