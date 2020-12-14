@@ -1,11 +1,11 @@
 ﻿#This scripts updates the license in all your local docker bc containers
 
  #License
-$licenseFile = "<license path>
+$licenseFile = "<license path>"
 
 #Fill array with container names
 Write-Host("Filling arrays with container names...")
-$inactiveContainerNames = ps --filter "status=exited" --filter "label=nav" --format "{{.Names}}"
+$inactiveContainerNames = docker ps --filter "status=exited" --filter "label=nav" --format "{{.Names}}"
 $containerNames = Get-BcContainers
 
 #Start inactive containers
