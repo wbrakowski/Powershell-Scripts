@@ -1,7 +1,5 @@
-﻿#This scripts updates the license in all your local docker bc containers!
- #IMPORTANT NOTE: It does not check if your container is a BC container but imports the license for all containers!
- #If you have containers that are not related to Business Central, I do not know what happens.
- 
+﻿#This scripts updates the license in all your local docker bc containers
+
  #License
 $licenseFile = "<license path>
 
