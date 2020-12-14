@@ -1,5 +1,9 @@
-﻿#License
-$licenseFile = "C:\Users\wbrakowski8911\Desktop\Aktuelles\German Developer BC V17.flf"
+﻿#This scripts updates the license in all your local docker bc containers!
+ #IMPORTANT NOTE: It does not check if your container is a BC container but imports the license for all containers!
+ #If you have containers that are not related to Business Central, I do not know what happens.
+ 
+ #License
+$licenseFile = "<license path>
 
 #Fill array with container names
 Write-Host("Filling arrays with container names...")
